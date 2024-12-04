@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/"> <!-- 타임리프쓸때마다 써줘야되는데 이걸 등록할 수 있음 -->
+<head>
+<meta charset="UTF-8">
+<title>배포 테스트</title>
+</head>
+<body>
+	배포 테스트
+	[[${upload}]]
+	<span th:text="${@enviorment.getProperty('file.uploadpath')}"></span>
+</body>
+</html>
