@@ -24,7 +24,7 @@ public class PrjtApplication {
 	
 	@GetMapping("/")
 	public String main(Model model) {
-		logger.info
+		logger.info("main");
 		model.addAttribute("upload", uploadPath);
 		return "main";
 	}
